@@ -2,20 +2,21 @@
 <manifest>
   <remote name="moto-common" fetch="https://github.com/moto-common/" />
   <remove-project name="android_hardware_qcom-caf_common" />
+  <remove-project name="android_hardware_qcom_thermal" />
   <remove-project name="android_vendor_qcom_opensource_audio-hal_st-hal" />
+  <remove-project name="android_vendor_qcom_opensource_fm-commonsys" />
   <remove-project name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
-  <remove-project name="android_device_qcom_sepolicy" />
-  <remove-project name="android_device_qcom_sepolicy_vndr" />
+  <remove-project name="platform_device_qcom_sepolicy_vndr" />
+  <remove-project name="platform_device_qcom_sepolicy" />
+  <remove-project name="platform/external/fastrpc" />
+  <remove-project name="platform/hardware/qcom/bootctrl" />
   <remove-project name="android_external_ant-wireless_hidl" />
-  <remove-project name="android_external_fastprc" />
   <remove-project name="android_external_json-c" />
   <remove-project name="android_vendor_codeaurora_telephony" />
   <remove-project name="android_vendor_qcom_opensource_dataservices" />
   <remove-project name="android_vendor_qcom_opensource_interfaces" />
   <remove-project name="android_vendor_qcom_opensource_thermal-engine" />
-  <remove-project name="android_vendor_qcom_opensource_thermal" />
   <remove-project name="android_vendor_qcom_opensource_vibrator" />
-  <remove-project name="platform_hardware_qcom_bootctrl" />
   <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" remote="moto-common" revision="master">
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
