@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
   <remote name="moto-common" fetch="https://github.com/moto-common/" />
-  <remove-project name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" />
-  <remove-project name="android_hardware_qcom-caf_common" />
+  <remove-project name="platform_hardware_qcom-caf_common" />
+  <remove-project name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
   <remove-project name="android_hardware_qcom_thermal" />
   <remove-project name="android_vendor_qcom_opensource_audio-hal_st-hal" />
-  <remove-project name="android_vendor_qcom_opensource_fm-commonsys" />
-  <remove-project name="platform_device_qcom_sepolicy_vndr" />
+  <remove-project name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" />
+  <remove-project name="android_vendor_qcom_opensource_core-utils-vendor" />
   <remove-project name="platform_device_qcom_sepolicy" />
   <remove-project name="platform/external/fastrpc" />
   <remove-project name="platform/hardware/qcom/bootctrl" />
@@ -45,5 +45,6 @@
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
   </project>
 </manifest>
