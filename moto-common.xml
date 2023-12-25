@@ -6,6 +6,11 @@
         fetch="https://github.com/AOSPA/" />
     <remote name="aospa-vendor"
         fetch="https://github.com/ThankYouMario/" />
+    <!-- CLO -->
+    <remote name="clo-la"
+            fetch="https://git.codelinaro.org/clo/la"
+            sync-c="true"
+            sync-tags="false" />
 
     <!-- Device Trees -->
     <project path="device/motorola/common" name="android_device_motorola_common"
@@ -51,6 +56,15 @@
     <project path="device/motorola/guamna-kernel" name="android_device_motorola_guamna-kernel"
         remote="moto-common" revision="master" />
     <project path="device/motorola/guamna" name="android_device_motorola_guamna"
+        remote="moto-common" revision="14" />
+    <!-- SM8250 (4.19) -->
+    <project path="device/motorola/sm8250-common" name="android_device_motorola_sm8250-common"
+        remote="moto-common" revision="14" />
+    <project path="device/motorola/sm8250-common-kernel" name="android_device_motorola_sm8250-common-kernel"
+        remote="moto-common" revision="master" />
+    <project path="device/motorola/nio-kernel" name="android_device_motorola_nio-kernel"
+        remote="moto-common" revision="master" />
+    <project path="device/motorola/nio" name="android_device_motorola_nio"
         remote="moto-common" revision="14" />
     <!-- SM6125 (4.14) -->
     <project path="kernel/motorola/msm-4.14" name="android_kernel_motorola_msm-4.14"
@@ -101,6 +115,11 @@
         remote="moto-common" revision="14" />
     <project path="vendor/motorola/guamna" name="android_vendor_motorola_guamna"
         remote="moto-common" revision="14" />
+    <!-- SM8250 (4.19) -->
+    <project path="vendor/motorola/sm8250-common" name="android_vendor_motorola_sm8250-common"
+        remote="moto-common" revision="14" />
+    <project path="vendor/motorola/nio" name="android_vendor_motorola_nio"
+        remote="moto-common" revision="14" />
     <!-- SM6125 (4.14) -->
     <project path="vendor/motorola/amogus" name="android_vendor_motorola_amogus"
         remote="moto-common" revision="14" />
@@ -149,8 +168,15 @@
         remote="moto-common" revision="master" />
     <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl"
         remote="moto-common" revision="master" />
+    <project path="hardware/samsung/nfc" name="platform_hardware_samsung_nfc"
+        remote="moto-common" revision="master" />
+    <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc"
+        remote="moto-common" revision="14" />
+    <project path="hardware/st/nfc" name="platform_hardware_st_nfc"
+        remote="moto-common" revision="master" />
     <project path="vendor/qcom/opensource/recovery-ext" name="platform_vendor_qcom_opensource_recovery-ext"
         remote="moto-common" revision="master" />
+    <project remote="clo-la" name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" revision="18028fe2c6bb3ef65ccb90639e15b74132a28a50" upstream="refs/heads/android-core.lnx.13.0.r1-rel"/>
     <!-- Misc -->
     <project path="device/qcom/qssi" name="android_device_qcom_qssi"
         remote="aospa" revision="uvite" />
@@ -165,6 +191,8 @@
     <project path="prebuilts/clang/host/linux-x86/clang-r383902" name="platform_prebuilts_clang_host_linux-x86_clang-r383902"
         remote="moto-common" revision="master" />
     <project path="vendor/goodix" name="platform_vendor_goodix"
+        remote="moto-common" revision="master" />
+    <project path="vendor/egistec/interfaces" name="platform_vendor_egistec_interfaces"
         remote="moto-common" revision="master" />
     <project path="vendor/qcom/opensource/thermal-engine" name="platform_vendor_qcom_opensource_thermal-engine"
         remote="moto-common" revision="master" />
